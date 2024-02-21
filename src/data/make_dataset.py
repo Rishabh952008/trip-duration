@@ -46,6 +46,7 @@ def main():
        download_data()
        unzip_data("data/raw",Path('data/kaggle_data/nyc-taxi-trip-duration.zip'))
        unzip_data("data/processed",Path('data/raw/train.zip'))
+       unzip_data("data/processed",Path('data/raw/test.zip'))
     else:
        print("data already downloaded")
     # params_file = home_dir.as_posix() + '/params.yaml'
